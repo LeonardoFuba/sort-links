@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: bitnami/postgresql:latest
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=shortlinks
+    volumes:
+      - shortlinks_pg_data:/bitnami/postgresql
+
+  redis:
+    image: bitnami/redis:latest
+    environment:
+      - REDIS_PASSWORD=docker
+    ports:
+      - '6379:6379'
+    volumes:
+      - shortlinks_redis_data:/bitnami/redis/data
+
+volumes:
+  shortlinks_pg_data:
+  shortlinks_redis_data:

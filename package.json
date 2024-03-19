@@ -1,0 +1,23 @@
+{
+  "name": "sort-links",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "setup": "tsx src/setup.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^4.26.2",
+    "postgres": "^3.4.3",
+    "redis": "^4.6.13",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.29",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  }
+}
