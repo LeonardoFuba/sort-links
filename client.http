@@ -13,6 +13,11 @@ GET http://localhost:3333/api/links
  
 
 ###
+# @name list-metrics
+GET http://localhost:3333/api/metrics
+ 
+
+###
 # @name use-link
 GET http://localhost:3333/rocketseat
  
